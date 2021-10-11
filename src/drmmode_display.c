@@ -3366,7 +3366,7 @@ Bool drmmode_pre_init(ScrnInfoPtr pScrn, drmmode_ptr drmmode, int cpp)
 		return FALSE;
 
 	drmmode->count_crtcs = mode_res->count_crtcs;
-	xf86CrtcSetSizeRange(pScrn, 320, 200, mode_res->max_width,
+	xf86CrtcSetSizeRange(pScrn, 100, 100, mode_res->max_width,
 			     mode_res->max_height);
 
 	xf86DrvMsgVerb(pScrn->scrnIndex, X_INFO, AMDGPU_LOGLEVEL_DEBUG,
